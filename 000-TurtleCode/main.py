@@ -2,6 +2,7 @@ from tkinter import *
 import scripts.version as version
 import scripts.conversions as conversions
 import json
+import re
 
 
 class TurtleCode:
@@ -15,6 +16,8 @@ class TurtleCode:
             self.lang = json.load(s)
 
         # Variable declaration START
+        self.autofill_drag_anchor = None
+
         self.file_text = ""
         self.default_font = (self.config["default_font"], self.config["default_font_size"])
 
@@ -22,7 +25,9 @@ class TurtleCode:
 
         self.window = Tk()
         self.main_text_box = Text(self.window, font=self.default_font)
-        self.autofill_listbox = Listbox(self.window)
+        self.autofill_size_frame = Frame(self.window, width=self.window.winfo_width() / 8, bg="#000000")
+        self.autofill_listbox = Listbox(self.window, width=self.config["autofill"]["default_box_width"],
+                                        bg=self.config["autofill"]["bg_col"])
         # Variable declaration END
 
         self.window_setup()
@@ -38,8 +43,8 @@ class TurtleCode:
 
     def pack_widgets(self):
 
+        self.autofill_listbox.pack(side=RIGHT, fill=Y)
         self.main_text_box.pack(expand=1, fill=BOTH)
-        self.autofill_listbox.pack(side=RIGHT, expand=1, fill=Y)
 
     def bindings(self):
 
@@ -48,16 +53,26 @@ class TurtleCode:
     def text_callback(self, event):
         self.file_text = self.main_text_box.get("1.0", END)
 
-        for tag in self.main_text_box.tag_names():
-            self.main_text_box.tag_delete(tag)
+        self.autofill_listbox.delete(0, END)
 
-        self.set_tags()
-        self.set_autofill()
+        if event.keysym != "BackSpace":
+            self.set_tags()
+            self.set_autofill()
 
     def set_autofill(self):
-        print(self.get_autofill("te"))
+        index = self.main_text_box.index('current').split(".")
+        current_word = self.file_text.split()[
+            conversions.charIndex_wordNum(self.file_text.split("\n")[int(index[0]) - 1], int(index[1]))
+        ]
+        autofill_results = self.get_autofill(current_word)
+
+        for result in autofill_results:
+            self.autofill_listbox.insert(END, result)
 
     def set_tags(self):
+
+        for tag in self.main_text_box.tag_names():
+            self.main_text_box.tag_delete(tag)
 
         split_lines = self.file_text.split("\n")
         for line_num in range(len(split_lines)):
@@ -92,6 +107,5 @@ class TurtleCode:
             if word in auto_word:
                 out.append(auto_word)
         return out
-
 
 t = TurtleCode()
