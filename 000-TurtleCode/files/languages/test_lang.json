@@ -1,0 +1,13 @@
+{
+  "name": "Test Lang",
+  "syntax_highlighting": [
+    {
+      "word": "test",
+      "style": null,
+      "col": "#ff0000"
+    }
+  ],
+  "autofill": [
+  
+  ]
+}
