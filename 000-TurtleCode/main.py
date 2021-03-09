@@ -10,8 +10,10 @@ class TurtleCode:
     def __init__(self):
 
         # Files
-        self.config = json.load(open("config.json"))
-        self.lang = json.load(open(self.config["default_lang_path"]))
+        with open("config.json"):
+            self.config = json.loads()
+        with open(self.config["default_lang_path"]):
+            self.lang = json.loads()
 
         # Variable declaration START
         self.file_text = ""
