@@ -7,9 +7,8 @@ Small IDE
 - Comment highlighting (!!!)
 - File management
 - Script running (Buggy, needs looking at later)
+- Project system
 
 ## TODO
-- File tree/navigation system
-- Finish Menubar
 - Write some language files
 - Dark mode (?)
