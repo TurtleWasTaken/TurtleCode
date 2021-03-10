@@ -5,12 +5,11 @@ Small IDE
 - Syntax highlighting
 - Auto-fill (press Shift+tab)
 - Comment highlighting (!!!)
-- Thats about it so far.
+- File management
+- Script running (Buggy, needs looking at later)
 
 ## TODO
-- File management (Saving/Loading)
 - File tree/navigation system
-- Script running
 - Finish Menubar
 - Write some language files
 - Dark mode (?)
