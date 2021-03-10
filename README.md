@@ -9,8 +9,6 @@ Turtle Code is a small IDE written by me, Mr Turtle. You can use it if you want.
 - Ctrl + R -> Run current file according to the "default_run_command" in the language folder of the current language.
 - Shift + Tab -> Insert first word in auto-fill list (Right-side)
 
-Small IDE
-
 ## Features
 - Syntax highlighting
 - Auto-fill
