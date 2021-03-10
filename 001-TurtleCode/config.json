@@ -1,0 +1,18 @@
+{
+  "window": {
+    "size": "1440x900",
+    "title": "Turtle Code (V{VERSION})",
+    "bg_col": "#c7c7c7"
+  },
+  "autofill": {
+    "default_box_width": 64,
+    "bg_col": "#d1d1d1"
+  },
+  "word_separators": [
+    " ","!", "\"", "£", "$", "%", "^", "&", "*", "(", ")", "-", "+", "=", "{", "[", "}", "]", ":", ";", "@", "'", "~", "#", "<", ",", ">", ".", "?", "/", "|", "\\"
+  ],
+  "default_lang_path": "files/languages/test_lang.json",
+  "default_word_col": "#000000",
+  "default_font": "Courier",
+  "default_font_size": 16
+}
