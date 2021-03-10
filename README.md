@@ -2,13 +2,13 @@
 Small IDE
 
 ## Features
-Syntax highlighting\n
-Auto-fill (press Shift+tab)\n
-Comment highlighting (!!!)\n
-Thats about it so far.\n
+- Syntax highlighting
+- Auto-fill (press Shift+tab)
+- Comment highlighting (!!!)
+- Thats about it so far.
 
 ## TODO
-File navigation\n
-Finish Menubar\n
-Write some language files\n
-Dark mode (?)\n
+- File navigation
+- Finish Menubar
+- Write some language files
+- Dark mode (?)
