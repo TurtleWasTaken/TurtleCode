@@ -1,0 +1,30 @@
+{
+  "name": "Test Lang",
+  "default_file_extensions": ["tl"],
+  "single_comment": "//",
+  "single_comment_col": "#ff0000",
+  "single_comment_style": "italic",
+  "block_comment_start": "/*",
+  "block_comment_end": "*/",
+  "block_comment_col": "#00ff00",
+  "block_comment_style": "italic",
+  "indent_chars": [
+    ":","(","{","["
+  ],
+  "syntax_highlighting": [
+    {
+      "word": "test",
+      "style": null,
+      "col": "#ff0000"
+    },
+    {
+      "word": "poggers",
+      "style": "bold",
+      "col": "#00ffff"
+    }
+  ],
+  "autofill": [
+    "test",
+    "poggers"
+  ]
+}
