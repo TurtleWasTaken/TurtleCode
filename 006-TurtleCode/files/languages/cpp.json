@@ -1,0 +1,20 @@
+{
+  "name": "C++",
+  "default_file_extensions": ["cpp"],
+  "default_run_command": "{FILEPATH}/{FILENAME}.exe",
+  "default_compile_command": "gcc {FILEPATH}/{FILENAME} -o {FILEPATH}/{FILENAME}.exe",
+  "single_comment": "//",
+    "block_comment_start": "*/",
+    "block_comment_end": "/*",
+    "str_chars":[
+            "\"", "'"
+    ],
+    "str_style":null,
+    "indent_chars": [
+        "(","{","["
+    ],
+  "syntax_highlighting": [
+  ],
+  "autofill": [
+  ]
+}
