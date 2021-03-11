@@ -18,7 +18,4 @@ Turtle Code is a small IDE written by me, Mr Turtle. You can use it if you want.
 - Styling (Kind of)
 
 ## TODO
-- Add ability to swap styles while in use.
-- Add ability to compile scripts
-- Add ability to configure run and compile commands
 - Write some language files
