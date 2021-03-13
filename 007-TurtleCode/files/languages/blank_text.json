@@ -1,6 +1,6 @@
 {
   "name": "Plain Text",
-  "default_file_extensions": ["txt", "md", "bat"],
+  "default_file_extensions": ["txt", "md", "bat", "log"],
   "default_run_command": null,
   "default_compile_command": null,
   "single_comment": null,
