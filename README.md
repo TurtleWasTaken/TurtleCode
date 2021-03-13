@@ -3,6 +3,7 @@
 ## Introduction
 
 Turtle Code is a small, lightweight IDE I made in my spare time. It is currently in version 007.815, however I am still actively developing it.
+Please note the plugins section of this file does not display properly. I would recommend viewing this as a raw file or downloading it
 
 
 ## Features
