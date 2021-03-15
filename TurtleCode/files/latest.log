@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "C:\Users\Windows 10\Desktop\Python Projects\2021\008-TurtleCode\main.py", line 748, in <module>
+    t = TurtleCode()
+  File "C:\Users\Windows 10\Desktop\Python Projects\2021\008-TurtleCode\main.py", line 119, in __init__
+    self.menu_bar_setup()
+  File "C:\Users\Windows 10\Desktop\Python Projects\2021\008-TurtleCode\main.py", line 187, in menu_bar_setup
+    self.plugins_menu.add_command(label="Add plugin", command=MENU_add_plugin)
+NameError: name 'MENU_add_plugin' is not defined
